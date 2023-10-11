@@ -54,6 +54,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.ClearAll)
                     })
@@ -61,6 +63,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 35.sp,
                     onClick = {
                         onAction(ActionClass.Operation(OperationClass.Modulo))
                     })
@@ -68,6 +72,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 35.sp,
                     onClick = {
                         onAction(ActionClass.Erase)
                     })
@@ -75,6 +81,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 40.sp,
                     onClick = {
                         onAction(ActionClass.Operation(OperationClass.Division))
                     })
@@ -87,6 +95,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(7))
                     })
@@ -94,6 +104,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(8))
                     })
@@ -101,6 +113,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(9))
                     })
@@ -108,6 +122,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 40.sp,
                     onClick = {
                         onAction(ActionClass.Operation(OperationClass.Multiplication))
                     })
@@ -120,6 +136,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(4))
                     })
@@ -127,6 +145,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(5))
                     })
@@ -134,6 +154,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(6))
                     })
@@ -141,6 +163,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 40.sp,
                     onClick = {
                         onAction(ActionClass.Operation(OperationClass.Subtract))
                     })
@@ -153,6 +177,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(1))
                     })
@@ -160,6 +186,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(2))
                     })
@@ -167,6 +195,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(3))
                     })
@@ -174,6 +204,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(SpecialBTN)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 40.sp,
                     onClick = {
                         onAction(ActionClass.Operation(OperationClass.Addition))
                     })
@@ -186,13 +218,18 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
+                        onAction(ActionClass.Digit(0))
                         onAction(ActionClass.Digit(0))
                     })
                 ButtonUI(str = "0",
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Digit(0))
                     })
@@ -200,6 +237,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(Color.White)
                         .weight(1f),
+                    textColor = Color.Black,
+                    fontSize = 27.sp,
                     onClick = {
                         onAction(ActionClass.Decimal)
                     })
@@ -207,6 +246,8 @@ fun Calculator(
                     modifier = Modifier
                         .background(OrangeBTN)
                         .weight(1f),
+                    textColor = Color.White,
+                    fontSize = 40.sp,
                     onClick = {
                         onAction(ActionClass.Calculate)
                     })

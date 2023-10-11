@@ -11,9 +11,9 @@ package com.ipsmeet.calculator.sealedclass
 
 sealed class ActionClass {
     data class Digit(val num: Int): ActionClass()
+    data class Operation(val operation: OperationClass): ActionClass()
     object Erase: ActionClass()
     object ClearAll: ActionClass()
     object Decimal: ActionClass()
     object Calculate: ActionClass()
-    data class Operation(val operation: OperationClass): ActionClass()
 }

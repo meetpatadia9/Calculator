@@ -10,11 +10,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 @Composable
-fun ButtonUI(str: String, modifier: Modifier, onClick: () -> Unit) {
+fun ButtonUI(
+    str: String,
+    modifier: Modifier,
+    textColor: Color,
+    fontSize: TextUnit,
+    onClick: () -> Unit
+) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
@@ -23,6 +29,10 @@ fun ButtonUI(str: String, modifier: Modifier, onClick: () -> Unit) {
             .clickable { onClick() }
             .then(modifier)
     ) {
-        Text(text = str, fontSize = 27.sp, color = Color.Black)
+        Text(
+            text = str,
+            fontSize = fontSize,
+            color = textColor
+        )
     }
 }
