@@ -20,9 +20,9 @@ class MainActivity : ComponentActivity() {
                 val viewModel = viewModel<MainActivityViewModel>()
                 val state = viewModel.state
                 val gapBetweenBtn = 10.dp
+                val displayTxt =state.firstNum + (state.operation?.operation ?: "") + state.secondNum
 
                 Calculator(
-                    state = state,
                     gapBetweenBtn = gapBetweenBtn,
                     onAction = viewModel::onAction,
                     modifier = Modifier
@@ -30,7 +30,8 @@ class MainActivity : ComponentActivity() {
                         .background(
                             MainBG
                         )
-                        .padding(10.dp)
+                        .padding(10.dp),
+                    displayTxt = displayTxt
                 )
             }
         }

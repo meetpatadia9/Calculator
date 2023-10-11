@@ -24,9 +24,9 @@ import com.ipsmeet.calculator.ui.theme.SpecialBTN
 
 @Composable
 fun Calculator(
-    state: StateDataClass,
     gapBetweenBtn: Dp,
     modifier: Modifier = Modifier,
+    displayTxt: String,
     onAction: (ActionClass) -> Unit
 ) {
     Box(modifier = modifier) {
@@ -37,14 +37,20 @@ fun Calculator(
             verticalArrangement = Arrangement.spacedBy(gapBetweenBtn)
         ) {
             Text(
-                text = state.firstNum + (state.operation?.operation ?: "") + state.secondNum,
+                text = displayTxt,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(25.dp),
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 72.sp,
-                color = Color.Black
+                fontSize =
+                when (displayTxt.length) {
+                    in 7..8 -> 58.sp
+                    in 9..15 -> 38.sp
+                    else -> 72.sp
+                },
+                color = Color.Black,
+                maxLines = 1
             )
             Row(
                 modifier = Modifier.fillMaxWidth(),

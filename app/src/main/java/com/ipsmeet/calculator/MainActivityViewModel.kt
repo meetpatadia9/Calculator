@@ -98,9 +98,9 @@ class MainActivityViewModel : ViewModel() {
             }
 
             val result: String = if ((ans * 10.0).toInt() % 10 == 0) {
-                ans.toInt().toString().take(15)
+                ans.toInt().toString().take(12)
             } else {
-                ans.toString().take(15)
+                ans.toString().take(12)
             }
 
             state = state.copy(
